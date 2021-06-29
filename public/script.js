@@ -1,4 +1,4 @@
-const search = document.getElementById('search');
-const input = document.getElementById('input');
+const search = document.getElementById("search");
+const input = document.getElementById("input");
 
-search.addEventListener("click", console.log(input.value));
+input.addEventListener("input", () => console.log(input.value));
