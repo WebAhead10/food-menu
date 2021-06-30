@@ -13,7 +13,7 @@ body {
   /* font-size-adjust: inherit; */
 
   /* margin: 0 0 0 13.5em; */
-  margin-left: -2em;
+  margin-left: -1.7em;
   width: 22vw;
   padding: 3%;
   border-radius: 8px;
@@ -21,22 +21,22 @@ body {
 }
 
 #search {
-  font-size: 2vw;
-  /* margin: 1em 0 0 21em; */
+  font-size: 1.5vw;
+  margin-left: -0.5em;
   border-radius: 8px;
   cursor: pointer;
-  padding: 0.5em;
+  padding: 0.3em;
   color: rgb(90, 56, 16);
   background-color: rgb(255, 242, 205);
   font-style: bold;
 }
 
 #search:hover {
-  font-size: 23px;
+  font-size: 1.5vw;
   /* margin: 1em 0 0 21em; */
   border-radius: 8px;
   cursor: pointer;
-  padding: 0.5em;
+  padding: 0.3em;
   color: rgb(236, 235, 233);
   background-color: rgba(255, 242, 205, 0.5);
   font-style: bold;
@@ -65,22 +65,33 @@ body {
   }
 
   #input {
-    font-size: 25px;
+    font-size: 2vh;
     margin: 35vh 0 0 58vw;
-    width: 70vw;
-    padding: 5%;
+    width: 55vw;
+    padding: 1vh;
     border-radius: 8px;
     background-color: rgb(255, 242, 205);
   }
 
   #search {
-    font-size: 23px;
+    font-size: 2vh;
     margin: 0 0 0 58vw;
     border-radius: 8px;
     cursor: pointer;
     padding: 0.5em;
     color: rgb(90, 56, 16);
     background-color: rgb(255, 242, 205);
+    font-style: bold;
+  }
+
+  #search:hover {
+    font-size: 2vh;
+    margin: 0 0 0 58vw;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.5em;
+    color: rgb(236, 235, 233);
+    background-color: rgba(255, 242, 205, 0.5);
     font-style: bold;
   }
 
