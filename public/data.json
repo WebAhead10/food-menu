@@ -59,6 +59,16 @@
       "title": "Slow Cooker Beef Stew",
       "image": "https://spoonacular.com/recipeImages/715446-312x231.jpg",
       "imageType": "jpg"
+    },
+    {
+      "id": 715436,
+      "title": "Pizza",
+      "imageType": "jpg"
+    },
+    {
+      "id": 713346,
+      "title": "Pizza With olives",
+      "imageType": "jpg"
     }
   ],
   "offset": 0,
