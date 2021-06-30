@@ -1,0 +1,22 @@
+{
+  "name": "food-menu",
+  "version": "1.0.0",
+  "description": "For this project, we decided to build an autocomplete food menu",
+  "main": "router.js",
+  "scripts": {
+    "dev" : "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebAhead10/food-menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebAhead10/food-menu/issues"
+  },
+  "homepage": "https://github.com/WebAhead10/food-menu#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.8"
+  }
+}

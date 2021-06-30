@@ -1,18 +1,31 @@
+const menu = require("../data.json");
+const titles = menu.results.map(name => name.title);
+// console.log(titles);
+
+
 function autocomplete(request, response) {
 
   let body = "";
   // callback runs every time the stream has the next bit of data
-  request.on("data", chunk => {
+  request.on("data", (chunk) => {
     body += chunk;
   });
   // callback runs when request finishes and we have all the data
   request.on("end", () => {
-    const data = JSON.parse(body)
-    console.log(data)
+    const data = JSON.parse(body);
+    
 
 
-    response.writeHead(200, { "content-type": "text/html" });
-    response.end("<h1>Thank you for submitting</h1>");
+    let matches = titles.filter(title => {
+      const regex = new RegExp(`^${data}`, 'gi');
+      return title.match(regex)
+  });
+
+  console.log(matches);
+
+
+    response.writeHead(200, { "content-type": "application/json" });
+    response.end(JSON.stringify(matches));
   });
 
 }

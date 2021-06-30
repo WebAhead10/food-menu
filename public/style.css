@@ -1,8 +1,8 @@
 body {
     display: flex;
+    box-sizing: border-box;
     background-image: url("menu-img.jpg");
-    height: 10%;
-    width: max-content;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 28%;
@@ -33,7 +33,19 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: 23.5em;
+    margin-left: 18vw;
 
 
+}
+
+@media screen and (max-width: 800px) {
+body {
+    background-image: url("menu-img-cropped.jpg");  
+    width: 100%;
+}
+
+.container {
+    width: 10px;
+    height: 10px;
+}
 }
