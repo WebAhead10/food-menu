@@ -28,6 +28,7 @@ function initListener(data) {
   var new_element = search.cloneNode(true);
   search.parentNode.replaceChild(new_element, search);
   new_element.addEventListener("click", (event) => {
+    console.log("data: " , data);
     var img = data[0].image;
     console.log(img)
     
