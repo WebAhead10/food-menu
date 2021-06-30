@@ -1,6 +1,6 @@
 const menu = require("../data.json");
-// const titles = menu.results.map(name => name.title);
-// const urls = menu.results.map(name => name.image);
+const titles = menu.results.map(name => name.title);
+const urls = menu.results.map(name => name.image);
 // console.log(titles);
 
 
@@ -17,7 +17,7 @@ function autocomplete(request, response) {
     
 
 
-    let matches = menu.results.filter(({title}) => {
+    let matches = titles.filter(title => {
       const regex = new RegExp(`^${data}`, 'gi');
       return title.match(regex)
   });
