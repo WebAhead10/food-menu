@@ -4,7 +4,8 @@
   "description": "For this project, we decided to build an autocomplete food menu",
   "main": "router.js",
   "scripts": {
-    "dev" : "nodemon server.js"
+    "dev" : "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
