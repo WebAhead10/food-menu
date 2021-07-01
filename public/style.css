@@ -10,9 +10,6 @@ body {
 
 #input {
   font-size: 1.4vw;
-  /* font-size-adjust: inherit; */
-
-  /* margin: 0 0 0 13.5em; */
   margin-left: -1.7em;
   width: 22vw;
   padding: 3%;
@@ -33,7 +30,6 @@ body {
 
 #search:hover {
   font-size: 1.5vw;
-  /* margin: 1em 0 0 21em; */
   border-radius: 8px;
   cursor: pointer;
   padding: 0.3em;
@@ -48,6 +44,11 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-left: 16.5vw;
+}
+
+#img {
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 800px) {

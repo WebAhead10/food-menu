@@ -1,8 +1,4 @@
 const menu = require("../data.json");
-// const titles = menu.results.map(name => name.title);
-// const urls = menu.results.map(name => name.image);
-// console.log(titles);
-
 
 function autocomplete(request, response) {
 
@@ -14,17 +10,12 @@ function autocomplete(request, response) {
   // callback runs when request finishes and we have all the data
   request.on("end", () => {
     const data = JSON.parse(body);
-    
-
-
     let matches = menu.results.filter(({title}) => {
       const regex = new RegExp(`^${data}`, 'gi');
       return title.match(regex)
   });
 
   console.log(matches);
-
-
     response.writeHead(200, { "content-type": "application/json" });
     response.end(JSON.stringify(matches));
   });
